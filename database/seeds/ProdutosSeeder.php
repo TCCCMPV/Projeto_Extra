@@ -13,7 +13,8 @@ class ProdutosSeeder extends Seeder
     {
         DB::table('produtos')->insert([
             'valor' => 10.00,
-            'Nome' => 'Kit 10 canetas',
+            'nome' => 'Kit 10 canetas',
+            'foto'=> 'https://a-static.mlcdn.com.br/618x463/caneta-escolar-kit-10-canetas-coloridas-esferografica-bic/bamboletoy4/5642230366/87fd4ce823de54ce2ce97107a9046bf4.jpg',
             'created_at' => now(),
             'updated_at' => now(),
             'user_id' => 1,
@@ -21,7 +22,8 @@ class ProdutosSeeder extends Seeder
         ]);
         DB::table('produtos')->insert([
             'valor' => 100.5,
-            'Nome' => 'Tablet Multilaser',
+            'nome' => 'tablet multilaser',
+            'foto' => 'https://a-static.mlcdn.com.br/618x463/tablet-multilaser-m7s-go-7-wi-fi-16gb-android-8-1-quad-core/magazineluiza/224437500/fd356065bb13520670bdb5f94b2e4110.jpg',
             'created_at' => now(),
             'updated_at' => now(),
             'user_id' => 1,

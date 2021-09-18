@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/produtos/novo-produto','novoProduto')->name('novoProduto');
+Route::get('/produtos','ProdutosController@exibirProdutos')->name('produtos');
+Route::get('/produtos/{id}','ProdutosController@exibirProduto')->name('produto');
+Route::get('/users/{id}','UsersController@exibirUser')->name('user');
+Route::get('/teste','ProdutosController@teste');

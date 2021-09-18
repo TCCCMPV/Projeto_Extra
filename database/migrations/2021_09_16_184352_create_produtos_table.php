@@ -15,11 +15,12 @@ class CreateProdutosTable extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nome', 50);
             $table->double('valor', 8, 2);
-            $table->foreignId('user_id');//vendedor
             $table->text('description');
-            $table->string('Nome', 50);
+            $table->foreignId('user_id');//vendedor
+            $table->text('foto')->nullable();
+            $table->timestamps();
         });
     }
 
